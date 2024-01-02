@@ -1,7 +1,7 @@
-export default function Signup() {
+import SignupModal from '@/app/(beforeLogin)/_component/SignupModal'
+
+export default function Page() {
   return (
-    <main className='styles.main'>
-      회원가입 모달
-    </main>
-  )
+    <SignupModal />
+  );
 }
