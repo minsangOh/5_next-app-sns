@@ -1,7 +1,7 @@
-export default function Login() {
+import LoginModal from '@/app/(beforeLogin)/_component/LoginModal'
+
+export default function Page() {
   return (
-    <main className='styles.main'>
-      로그인 모달
-    </main>
-  )
+    <LoginModal />
+  );
 }
