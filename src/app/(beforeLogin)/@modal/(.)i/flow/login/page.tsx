@@ -1,14 +1,16 @@
 "use client"; // server component를 client component로 변경하기
 
 import { useState } from "react";
-import styles from "@/app/(beforeLogin)/@modal/login.module.css";
+import styles from "@/app/(beforeLogin)/@modal/(.)i/flow/login/login.module.css"
 
 export default function Page() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
   const [message, setMessage] = useState();
 
-  const onSubmit = () => {};
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  };
   const onClickClose = () => {};
   const onChangeId = () => {};
   const onChangePassword = () => {};
@@ -30,7 +32,7 @@ export default function Page() {
             </svg>
           </button>
           <div> 로그인 하세요</div>
-          <form onSubmit={onsubmit}>
+          <form onSubmit={onSubmit}>
             <div className={styles.modalBody}>
               <div className={styles.inputDiv}>
                 <label className={styles.inputLabel} htmlFor="id">
