@@ -6,5 +6,7 @@ import Main from "@/app/(beforeLogin)/_component/Main";
 export default function Page() {
   const router = useRouter();
   router.replace("/i/flow/login");
-  return null;
+  return (
+    <Main />
+  );
 }
